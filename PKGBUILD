@@ -32,13 +32,13 @@ source=(
   "libxml2-v2.8.0.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/libxml2/-/archive/v2.8.0/libxml2-v2.8.0.tar.gz"
   "mbedtls-addacec784478244f66cd579fdc93b2e01e11c50.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/mbedtls/-/archive/addacec784478244f66cd579fdc93b2e01e11c50/mbedtls-addacec784478244f66cd579fdc93b2e01e11c50.tar.gz"
   "openh264-v1.5.0.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/openh264/-/archive/v1.5.0/openh264-v1.5.0.tar.gz"
-  "opus-35b371a85bf2cf21ab4b12b5475c76a2775b25d1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/opus/-/archive/35b371a85bf2cf21ab4b12b5475c76a2775b25d1/opus-35b371a85bf2cf21ab4b12b5475c76a2775b25d1.tar.gz"
+  "opus-v1.1.4.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/opus/-/archive/v1.1.4/opus-v1.1.4.tar.gz"
   "speex-fc1dd43c3c9d244bca1c300e408ce0373dbd5ed8.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/speex/-/archive/fc1dd43c3c9d244bca1c300e408ce0373dbd5ed8/speex-fc1dd43c3c9d244bca1c300e408ce0373dbd5ed8.tar.gz"
   "srtp-d79ae95126baa3cec83097469e97525a1d9e2d50.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/srtp/-/archive/d79ae95126baa3cec83097469e97525a1d9e2d50/srtp-d79ae95126baa3cec83097469e97525a1d9e2d50.tar.gz"
-  "v4l-utils-92995faa431fdd247d55b982898a70aa3a339874.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/v4l-utils/-/archive/92995faa431fdd247d55b982898a70aa3a339874/v4l-utils-92995faa431fdd247d55b982898a70aa3a339874.tar.gz"
+  "v4l-utils-10d5c745bde031f21b36f8d016b5790150f70eea.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/v4l-utils/-/archive/10d5c745bde031f21b36f8d016b5790150f70eea/v4l-utils-10d5c745bde031f21b36f8d016b5790150f70eea.tar.gz"
   "zlib-cacf7f1d4e3d44d871b605da3b647f07d718623f.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/external/zlib/-/archive/cacf7f1d4e3d44d871b605da3b647f07d718623f/zlib-cacf7f1d4e3d44d871b605da3b647f07d718623f.tar.gz"
-  "${pkgname%-desktop-all}-3.12.0.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/${pkgname%-desktop-all}/-/archive/3.12.0/${pkgname%-desktop-all}-3.12.0.tar.gz"
-  "mediastreamer2-2.16.1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/mediastreamer2/-/archive/2.16.1/mediastreamer2-2.16.1.tar.gz"
+  "lib${pkgname%-desktop-all}-4.3.1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/lib${pkgname%-desktop-all}/-/archive/4.3.1/lib${pkgname%-desktop-all}-4.3.1.tar.gz"
+  "mediastreamer2-4.3.1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/mediastreamer2/-/archive/4.3.1/mediastreamer2-4.3.1.tar.gz"
   "msamr-1.1.3.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/msamr/-/archive/1.1.3/msamr-1.1.3.tar.gz"
   "msopenh264-1.2.1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/msopenh264/-/archive/1.2.1/msopenh264-1.2.1.tar.gz"
   "mssilk-1.1.1.tar.gz::https://gitlab.${pkgname%-desktop-all}.org/BC/public/mssilk/-/archive/1.1.1/mssilk-1.1.1.tar.gz"
@@ -55,7 +55,7 @@ source=(
   "bzrtp.patch"
   "mediastreamer2.patch"
   "ortp.patch"
-  "v4l-utils.patch"
+  #"v4l-utils.patch"
   "fix-qt5_1x.patch"
 )
 sha256sums=(
@@ -79,13 +79,14 @@ sha256sums=(
   "f254fb208e72d105b3cda3635c7a8a6f33a9a9e522d0e79dcaa88d913f792817"
   "3d1788df4a2671fa26cf1d67a9232a65f5303d8a4ae99bf7e6d68860328ea396"
   "7d8a1fd7353d574e1c2384e952335be2c1b3e709db0dae354b8961d8126a4221"
-  "35465e5650e08e7b3bfe2d6c6c32d6b9787d3d0eacf6dcf024d1c2d60c6ceb16"
+  #"d86e235f9b1662be138ad3708c04a5a7f4ccd804aaad2e5387276c52f93ad935"
+  "6dbf34e76c94ad170548afc08f8994d24599fe2c8be3861f64fe75f5624b0cee"
   "c498c18e9c4710da49e702a0fb3874e63f80f8f2640beb6f8cae56785b519010"
   "e43b594c291b68dad5e7c2e7b9f6c34326ecb6beb183e788cfe12f4505bbd639"
-  "12011d6715e64e91f1c5bdc4066a16331d9fc6281467b4f23e8d6f89ab5ee59d"
+  "0fd85a6801d79fb54ec4990e3eb78b4ea51ee606dc2f8334c2b63a6a16485f09"
   "6d4d6640ca3121620995ee255945161821218752b551a1a180f4215f7d124d45"
-  "60fb1e5d25823fecc7ce1955ce7e886e013118a184df1965d1877ffe6cc171b7"
-  "25e0557d5b992d256a6df07466ba3c10587bdf899850b46a31e79b91147e5910"
+  "b1bcfced96ff71670f1e7b079f3ebbefaecdc5aced8aac628491f0a65ba9552c"
+  "0b33ca111fbc6202ad55decee4c185b2ee42699ab0694b6281dee1180fdef4ba"
   "08e67986389a03246d0891715e354778986275c675012947526e8029e7454b32"
   "f509a7d01776dbfa69911297e95dcb8fb94d23c8139d6af90fe72aafa8948628"
   "c2cead3c4c83c82bb6881b83a662cd23049ffa51b9e98bb9f11245d522e99530"
@@ -102,7 +103,7 @@ sha256sums=(
   "3f4f65e73d7247f8c5888e44a7abb236b1388153b5169975cb6164651bdad03e"
   "407eb61fa5a2c3b57c524e8b842a82e16c87269172e681227e3313c5728cf8e9"
   "a6ab60f1b34c74eb11e986dd62aa817d56d1a094b88e2569bd2e5f100a90a5d1"
-  "26719ec8caa919b3bdb3e9a6462e034ab224b8319331e695c2deb26b4a1e4d42"
+  #"26719ec8caa919b3bdb3e9a6462e034ab224b8319331e695c2deb26b4a1e4d42"
   "e2cb11fc8ffc44a4448bdb4410023325cb7a0d673d6670478294f55a54375689"
 )
 
@@ -135,8 +136,13 @@ prepare() {
         rm -r "${srcdir}/${pkgname%-all}-${pkgver}/submodules/externals/${_pkg}"
         ln -s "${srcdir}/${_pkg}-${_ver}" "${srcdir}/${pkgname%-all}-${pkgver}/submodules/externals/${_pkg}"
       else
-        rm -r "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${_pkg}"
-        ln -s "${srcdir}/${_pkg}-${_ver}" "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${_pkg}"
+        if [[ "${_pkg}" == "lib${pkgname%-desktop-all}" ]]; then
+          rm -r "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${pkgname%-desktop-all}"
+          ln -s "${srcdir}/${_pkg}-${_ver}" "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${pkgname%-desktop-all}"
+        else
+          rm -r "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${_pkg}"
+          ln -s "${srcdir}/${_pkg}-${_ver}" "${srcdir}/${pkgname%-all}-${pkgver}/submodules/${_pkg}"
+        fi
       fi
       
       # Creates a git environment needed to retrieve version in building
